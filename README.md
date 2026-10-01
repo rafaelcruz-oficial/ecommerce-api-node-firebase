@@ -10,7 +10,7 @@ facilitar manutenção e evolução.
 
 ## System Design
 
-![System Design da E-commerce API](docs/system-design.png)
+![System Design da E-commerce API](system-design.png)
 
 O fluxo principal da aplicação segue a separação:
 
