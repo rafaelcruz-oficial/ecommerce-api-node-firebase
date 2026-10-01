@@ -1,0 +1,43 @@
+{
+  "name": "ecommerce-api-node-firebase",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": "./lib/index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "lint": "npx eslint .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start:firebase": "firebase emulators:start --only functions",
+    "deploy": "npm run lint && run swagger && npm run build && firebase deploy --only functions",
+    "start": "npx tsc-watch --onSuccess \"node --env-file=.env ./lib/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "swagger": "node swagger.js",
+    "logs": "firebase functions:log"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "celebrate": "^15.0.3",
+    "dayjs": "^1.11.23",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "file-type": "^22.1.1",
+    "firebase": "^12.18.0",
+    "firebase-admin": "^14.2.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.10",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0",
+    "@types/swagger-ui-express": "^4.1.8",
+    "swagger-autogen": "^2.23.7",
+    "tsc-watch": "^7.2.1",
+    "typescript": "^7.0.2"
+  }
+}

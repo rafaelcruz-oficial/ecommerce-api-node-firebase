@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src", // Diretório de códigos TypeScrit
+    "outDir": "./lib", // Diretório de saída para os arquivos compilados
+    "sourceMap": true, // Gera mapas de origem para facilitar o debug
+    "noImplicitAny": true, // Nâo permite declarão de variável ou parêmetros sem tipo
+    "noImplicitReturns": true, // Verifica se todas as funções possuem tio de retorno informado
+    "noEmitOnError": true, // Não gera o código JS caso haja algum erro durante o processo de compilação
+    "strictNullChecks": true, // Força a verificação de valores null ou undefined
+    "noUnusedLocals": true, // Sinaliza quanto existem variáveis declaradas e não utilizadas
+
+    "allowSyntheticDefaultImports": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts"]
+}

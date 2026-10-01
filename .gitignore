@@ -1,0 +1,9 @@
+
+lib/**/*
+
+typings/
+firebase-adminsdk.json
+node_modules/
+*.local
+
+*.log
